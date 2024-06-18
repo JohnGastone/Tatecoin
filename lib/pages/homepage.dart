@@ -14,8 +14,20 @@ class _CoinHomeState extends State<CoinHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color(0xFF354249),
         appBar: AppBar(
-          title: Text(""),
+          backgroundColor: Color(0xFF354249),
+          title: Row(
+            children: [
+              SizedBox(
+                height: 30,
+                width: 30,
+                child: ClipOval(
+                  child: Image.asset(""),
+                ),
+              )
+            ],
+          ),
         ),
         body: SingleChildScrollView(
           child: Padding(
