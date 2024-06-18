@@ -48,7 +48,7 @@ class _CoinHomeState extends State<CoinHome> {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(right: 120),
+                  padding: const EdgeInsets.only(right: 80),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment
                         .start, // Aligns the children to the start horizontally
@@ -61,7 +61,7 @@ class _CoinHomeState extends State<CoinHome> {
                         height: 10,
                       ),
                       Text(
-                        "\$ 18 420.81",
+                        "Tate 18 420.81",
                         style: GoogleFonts.roboto(
                             color: Colors.white,
                             fontSize: 40,
@@ -111,7 +111,7 @@ class _CoinHomeState extends State<CoinHome> {
                             color: Colors.white),
                         child: Center(
                           child: SizedBox(
-                            width: 70,
+                            width: 90,
                             child: Row(
                               children: [
                                 Icon(
