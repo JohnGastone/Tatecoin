@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,13 +19,25 @@ class _CoinHomeState extends State<CoinHome> {
         appBar: AppBar(
           backgroundColor: Color(0xFF354249),
           title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               SizedBox(
                 height: 30,
                 width: 30,
                 child: ClipOval(
-                  child: Image.asset(""),
+                  child: Image.asset(
+                    "./assets/p2.png",
+                    fit: BoxFit.cover,
+                  ),
                 ),
+              ),
+              Text(
+                "TATECoin WALLET",
+                style: GoogleFonts.roboto(fontSize: 20, color: Colors.white),
+              ),
+              Icon(
+                CupertinoIcons.bell,
+                color: Colors.white,
               )
             ],
           ),
