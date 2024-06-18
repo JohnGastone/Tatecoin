@@ -47,16 +47,28 @@ class _CoinHomeState extends State<CoinHome> {
             padding: const EdgeInsets.all(15.0),
             child: Column(
               children: [
-                Text("Available Balance",
-                    style:
-                        GoogleFonts.roboto(fontSize: 20, color: Colors.grey)),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  "\$ 18 420.81",
-                  style: GoogleFonts.roboto(
-                      fontSize: 40, fontWeight: FontWeight.bold),
+                Padding(
+                  padding: const EdgeInsets.only(right: 120),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment
+                        .start, // Aligns the children to the start horizontally
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("Available Balance",
+                          style: GoogleFonts.roboto(
+                              fontSize: 20, color: Colors.grey)),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "\$ 18 420.81",
+                        style: GoogleFonts.roboto(
+                            color: Colors.white,
+                            fontSize: 40,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 20,
